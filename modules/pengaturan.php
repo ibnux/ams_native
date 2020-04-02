@@ -17,13 +17,13 @@
                 $sub = $_REQUEST['sub'];
                 switch ($sub) {
                     case 'back':
-                        include "backup.php";
+                        include "modules/backup.php";
                         break;
                     case 'rest':
-                        include "restore.php";
+                        include "modules/restore.php";
                         break;
                     case 'usr':
-                        include "user.php";
+                        include "modules/user.php";
                         break;
                     }
             } else {

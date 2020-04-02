@@ -52,34 +52,34 @@ Website     : https://masrud.com
             $page = $_REQUEST['page'];
             switch ($page) {
                 case 'tsm':
-                    include "transaksi_surat_masuk.php";
+                    include "modules/transaksi_surat_masuk.php";
                     break;
                 case 'ctk':
-                    include "cetak_disposisi.php";
+                    include "modules/cetak_disposisi.php";
                     break;
                 case 'tsk':
-                    include "transaksi_surat_keluar.php";
+                    include "modules/transaksi_surat_keluar.php";
                     break;
                 case 'asm':
-                    include "agenda_surat_masuk.php";
+                    include "modules/agenda_surat_masuk.php";
                     break;
                 case 'ask':
-                    include "agenda_surat_keluar.php";
+                    include "modules/agenda_surat_keluar.php";
                     break;
                 case 'ref':
-                    include "referensi.php";
+                    include "modules/referensi.php";
                     break;
                 case 'sett':
-                    include "pengaturan.php";
+                    include "modules/pengaturan.php";
                     break;
                 case 'pro':
-                    include "profil.php";
+                    include "modules/profil.php";
                     break;
                 case 'gsm':
-                    include "galeri_sm.php";
+                    include "modules/galeri_sm.php";
                     break;
                 case 'gsk':
-                    include "galeri_sk.php";
+                    include "modules/galeri_sk.php";
                     break;
             }
         } else {

@@ -10,16 +10,16 @@
             $act = $_REQUEST['act'];
             switch ($act) {
                 case 'add':
-                    include "tambah_klasifikasi.php";
+                    include "modules/tambah_klasifikasi.php";
                     break;
                 case 'edit':
-                    include "edit_klasifikasi.php";
+                    include "modules/edit_klasifikasi.php";
                     break;
                 case 'del':
-                    include "hapus_klasifikasi.php";
+                    include "modules/hapus_klasifikasi.php";
                     break;
                 case 'imp':
-                    include "upload_referensi.php";
+                    include "modules/upload_referensi.php";
                     break;
             }
         } else {

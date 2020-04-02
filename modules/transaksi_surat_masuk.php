@@ -17,19 +17,19 @@
                 $act = $_REQUEST['act'];
                 switch ($act) {
                     case 'add':
-                        include "tambah_surat_masuk.php";
+                        include "modules/tambah_surat_masuk.php";
                         break;
                     case 'edit':
-                        include "edit_surat_masuk.php";
+                        include "modules/edit_surat_masuk.php";
                         break;
                     case 'disp':
-                        include "disposisi.php";
+                        include "modules/disposisi.php";
                         break;
                     case 'print':
-                        include "cetak_disposisi.php";
+                        include "modules/cetak_disposisi.php";
                         break;
                     case 'del':
-                        include "hapus_surat_masuk.php";
+                        include "modules/hapus_surat_masuk.php";
                         break;
                 }
             } else {

@@ -1,1 +1,3 @@
 include/config.php
+upload/**
+!upload/index.php

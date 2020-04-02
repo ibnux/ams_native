@@ -17,13 +17,13 @@
             $act = $_REQUEST['act'];
             switch ($act) {
                 case 'add':
-                    include "tambah_surat_keluar.php";
+                    include "modules/tambah_surat_keluar.php";
                     break;
                 case 'edit':
-                    include "edit_surat_keluar.php";
+                    include "modules/edit_surat_keluar.php";
                     break;
                 case 'del':
-                    include "hapus_surat_keluar.php";
+                    include "modules/hapus_surat_keluar.php";
                     break;
             }
         } else {
