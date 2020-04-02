@@ -352,7 +352,7 @@
                                                         unset($_SESSION['errFormat']);
                                                     }
                                                 ?>
-                                            <small class="red-text">*Format file yang diperbolehkan hanya *.JPG, *.PNG dan ukuran maksimal file 2 MB. Disarankan gambar berbentuk kotak atau lingkaran!</small>
+                                            <small class="red-text">*Format file yang diperbolehkan hanya *.JPG, *.PNG dan ukuran maksimal file <?=getMaximumFileUploadSize()?>. Disarankan gambar berbentuk kotak atau lingkaran!</small>
                                         </div>
                                     </div>
                                     <div class="input-field col s6">

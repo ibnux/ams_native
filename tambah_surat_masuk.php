@@ -335,7 +335,7 @@
                                                 unset($_SESSION['errFormat']);
                                             }
                                         ?>
-                                    <small class="red-text">*Format file yang diperbolehkan *.JPG, *.PNG, *.DOC, *.DOCX, *.PDF dan ukuran maksimal file 2 MB!</small>
+                                    <small class="red-text">*Format file yang diperbolehkan *.JPG, *.PNG, *.DOC, *.DOCX, *.PDF dan ukuran maksimal file <?=getMaximumFileUploadSize()?>!</small>
                                 </div>
                             </div>
                         </div>
