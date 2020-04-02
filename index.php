@@ -8,9 +8,9 @@
         die();
     }
 
+    require_once 'vendor/autoload.php';
     require_once 'include/config.php';
     require_once 'include/functions.php';
-    $config = conn($host, $username, $password, $database);
 ?>
 <!--
 
@@ -37,9 +37,8 @@ Website     : https://masrud.com
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <?php
-        $query = mysqli_query($config, "SELECT logo from tbl_instansi");
-        list($logo) = mysqli_fetch_array($query);
-        echo '<link rel="shortcut icon" href="upload/'.$logo.'">';
+        $instansi = $db->get('tbl_instansi',['institusi', 'nama', 'status', 'alamat', 'kepsek', 'nip', 'website', 'email', 'logo'],['id_instansi'=>1]);
+        echo '<link rel="shortcut icon" href="upload/'.$instansi['logo'].'">';
     ?>
     <!-- Meta END -->
 
@@ -187,25 +186,17 @@ Website     : https://masrud.com
                     <!-- Row Form START -->
                     <div class="row">
 
-                    <?php
-                        $query = mysqli_query($config, "SELECT * FROM tbl_instansi");
-                        while($data = mysqli_fetch_array($query)){
-                    ?>
                     <!-- Logo and title START -->
                     <div class="col s12">
                         <div class="card-content">
                             <h5 class="center" id="title">Aplikasi Manajemen Surat</h5>
-                            <?php echo '<img id="logo" src="upload/'.$data['logo'].'">';?>
+                            <?php echo '<img id="logo" src="upload/'.$instansi['logo'].'">';?>
                             <h4 class="center" id="smk">
-                            <?php echo ''.$data['nama'].'';?>
+                            <?php echo ''.$instansi['nama'].'';?>
                             </h4>
                             <div class="batas"></div>
                         </div>
                     </div>
-                    <!-- Logo and title END -->
-                    <?php
-                        }
-                    ?>
 
                     <?php
                         if(isset($_REQUEST['submit'])){
@@ -219,22 +210,20 @@ Website     : https://masrud.com
                                 $username = trim(htmlspecialchars(mysqli_real_escape_string($config, $_REQUEST['username'])));
                                 $password = trim(htmlspecialchars(mysqli_real_escape_string($config, $_REQUEST['password'])));
 
-                                $query = mysqli_query($config, "SELECT id_user, username, nama, nip, admin FROM tbl_user WHERE username=BINARY'$username' AND password=MD5('$password')");
+                                $data = $db->get('tbl_user', ['id_user','id_instansi', 'username', 'nama', 'nip', 'admin','password'],['username'=>$username]);
 
-                                if(mysqli_num_rows($query) > 0){
+                                if(md5($password) == $data['password']){
                                     list($id_user, $username, $nama, $nip, $admin) = mysqli_fetch_array($query);
-
                                     //buat session
-                                    $_SESSION['id_user'] = $id_user;
-                                    $_SESSION['username'] = $username;
-                                    $_SESSION['nama'] = $nama;
-                                    $_SESSION['nip'] = $nip;
-                                    $_SESSION['admin'] = $admin;
-
+                                    $_SESSION['id_user'] = $data['id_user'];
+                                    $_SESSION['username'] = $data['username'];
+                                    $_SESSION['nama'] = $data['nama'];
+                                    $_SESSION['nip'] = $data['nip'];
+                                    $_SESSION['admin'] = $data['admin'];
+                                    $_SESSION['id_instansi'] = $data['id_instansi'];
                                     header("Location: ./admin.php");
                                     die();
                                 } else {
-
                                     //session error
                                     $_SESSION['errLog'] = '<center>Username & Password tidak ditemukan!</center>';
                                     header("Location: ./");

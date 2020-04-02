@@ -2,9 +2,6 @@
     //cek session
     if(!empty($_SESSION['admin'])){
 
-        require_once 'include/config.php';
-        require_once 'include/functions.php';
-        $config = conn($host, $username, $password, $database);
 ?>
 
 <head>
@@ -16,9 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <?php
-      $query = mysqli_query($config, "SELECT logo from tbl_instansi");
-      list($logo) = mysqli_fetch_array($query);
-       echo '<link rel="shortcut icon" href="upload/'.$logo.'">';
+    echo '<link rel="shortcut icon" href="upload/'.$instansi['logo'].'">';
     ?>
     <!-- Meta END -->
 

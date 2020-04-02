@@ -1,33 +1,25 @@
 <?php
-    //cek session
-    if(!empty($_SESSION['admin'])){
+//cek session
+if(empty($_SESSION['admin'])){
+    header("Location: ../");
+    die();
+}
 ?>
 
 <nav class="blue-grey darken-1">
     <div class="nav-wrapper">
-        <a href="./" class="brand-logo center hide-on-large-only"><i class="material-icons md-36">school</i> AMS</a>
+        <a href="./" class="brand-logo center hide-on-large-only"><i class="material-icons md-36">building</i> AMS</a>
         <ul id="slide-out" class="side-nav" data-simplebar-direction="vertical">
             <li class="no-padding">
                 <div class="logo-side center blue-grey darken-3">
                     <?php
-                        $query = mysqli_query($config, "SELECT * FROM tbl_instansi");
-                        while($data = mysqli_fetch_array($query)){
-                            if(!empty($data['logo'])){
-                                echo '<img class="logoside" src="./upload/'.$data['logo'].'"/>';
-                            } else {
-                                echo '<img class="logoside" src="./asset/img/logo.png"/>';
-                            }
-                            if(!empty($data['nama'])){
-                                echo '<h5 class="smk-side">'.$data['nama'].'</h5>';
-                            } else {
-                                echo '<h5 class="smk-side">SMK  Al - Husna Loceret Nganjuk</h5>';
-                            }
-                            if(!empty($data['alamat'])){
-                                echo '<p class="description-side">'.$data['alamat'].'</p>';
-                            } else {
-                                echo '<p class="description-side">Jalan Raya Kediri Gg. Kwagean No. 04 Loceret Telp/Fax. (0358) 329806 Nganjuk 64471</p>';
-                            }
+                        if(!empty($instansi['logo'])){
+                            echo '<img class="logoside" src="./upload/'.$instansi['logo'].'"/>';
+                        } else {
+                            echo '<img class="logoside" src="./asset/img/logo.png"/>';
                         }
+                        echo '<h5 class="smk-side">'.$instansi['nama'].'</h5>';
+                        echo '<p class="description-side">'.$instansi['alamat'].'</p>';
                     ?>
                 </div>
             </li>
@@ -58,7 +50,7 @@
                                 <li><a href="?page=tsk">Surat Keluar</a></li>
                             </ul>
                         </div>
-                   </li>
+                    </li>
                 </ul>
                 <?php
                     }
@@ -191,10 +183,3 @@
         <a href="#" data-activates="slide-out" class="button-collapse" id="menu"><i class="material-icons">menu</i></a>
     </div>
 </nav>
-
-<?php
-    } else {
-        header("Location: ../");
-        die();
-    }
-?>

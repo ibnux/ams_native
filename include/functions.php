@@ -1,5 +1,6 @@
 <?php
 date_default_timezone_set("Asia/Jakarta");
+use Medoo\Medoo;
 
 /**
  * FUngsi koneksi database.
@@ -220,3 +221,15 @@ function getMaximumFileUploadSize()
     $bytes = ini_get('post_max_size');
     return $bytes."B";
 }
+
+/**
+ * Medoo Database  Connection
+ */
+
+$db = new Medoo([
+	'database_type' => 'mysql',
+	'database_name' => $database,
+	'server' => $host,
+	'username' => $username,
+    'password' => $password
+]);

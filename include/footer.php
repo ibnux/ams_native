@@ -1,6 +1,9 @@
 <?php
-    //cek session
-    if(!empty($_SESSION['admin'])){
+//cek session
+if(empty($_SESSION['admin'])){
+    header("Location: ../");
+    die();
+}
 ?>
 
 <noscript>
@@ -10,19 +13,13 @@
 <!-- Footer START -->
 <footer class="page-footer">
     <div class="container">
-           <div class="row">
-               <br/>
-           </div>
+        <div class="row">
+            <br/>
+        </div>
     </div>
     <div class="footer-copyright blue-grey darken-1 white-text">
         <div class="container" id="footer">
-            <?php
-                $query = mysqli_query($config, "SELECT * FROM tbl_instansi");
-                while($data = mysqli_fetch_array($query)){
-            ?>
-                <span class="white-text copyright-date">&copy; <?php echo date("Y"); ?> <?php echo $data['nama'] .'</span>
-                ';?>
-            <?php } ?>
+            <span class="white-text copyright-date">&copy; <?= date("Y"); ?> <?=$instansi['nama']?></span>
         </div>
     </div>
 </footer>
@@ -79,10 +76,3 @@ $(document).ready(function(){
 
 </script>
 <!-- Javascript END -->
-
-<?php
-    } else {
-        header("Location: ../");
-        die();
-    }
-?>
