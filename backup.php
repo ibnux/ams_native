@@ -16,7 +16,7 @@
         echo '<!-- Row Start -->
                 <div class="row">
                     <!-- Secondary Nav START -->
-                    <div class="col m12">
+                    <div class="col s12">
                         <div class="z-depth-1">
                             <nav class="secondary-nav">
                                 <div class="nav-wrapper blue-grey darken-1">

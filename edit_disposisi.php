@@ -81,7 +81,7 @@
                 <!-- Row Start -->
                 <div class="row">
                     <!-- Secondary Nav START -->
-                    <div class="col m12">
+                    <div class="col s12">
                         <nav class="secondary-nav">
                             <div class="nav-wrapper blue-grey darken-1">
                                 <ul class="left">
@@ -127,7 +127,7 @@
                 <div class="row jarak-form">
 
                     <!-- Form START -->
-                    <form class="col m12" method="post" action="">
+                    <form class="col s12" method="post" action="">
 
                         <!-- Row in form START -->
                         <div class="row">
@@ -182,7 +182,7 @@
                             </div>
                             <div class="input-field col m6">
                                 <i class="material-icons prefix md-prefix">low_priority</i><label>Pilih Sifat Disposisi</label><br/>
-                                <div class="input-field col m11 right">
+                                <div class="input-field col s11 right">
                                     <select class="browser-default validate" name="sifat" id="sifat" required>
                                         <option value="<?php echo $row['sifat']; ?>"><?php echo $row['sifat']; ?></option>
                                         <option value="Biasa">Biasa</option>

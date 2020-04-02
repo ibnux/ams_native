@@ -166,7 +166,7 @@
                 <!-- Row Start -->
                 <div class="row">
                     <!-- Secondary Nav START -->
-                    <div class="col m12">
+                    <div class="col s12">
                         <nav class="secondary-nav">
                             <div class="nav-wrapper blue-grey darken-1">
                                 <ul class="left">
@@ -212,7 +212,7 @@
                 <div class="row jarak-form">
 
                     <!-- Form START -->
-                    <form class="col m12" method="POST" action="?page=tsk&act=edit" enctype="multipart/form-data">
+                    <form class="col s12" method="POST" action="?page=tsk&act=edit" enctype="multipart/form-data">
 
                         <!-- Row in form START -->
                         <div class="row">

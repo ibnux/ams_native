@@ -50,7 +50,7 @@
                 <!-- Row Start -->
                 <div class="row">
                     <!-- Secondary Nav START -->
-                    <div class="col m12">
+                    <div class="col s12">
                         <div class="z-depth-1">
                             <nav class="secondary-nav">
                                 <div class="nav-wrapper blue-grey darken-1">
@@ -128,7 +128,7 @@
                     if(isset($_REQUEST['submit'])){
                     $cari = mysqli_real_escape_string($config, $_REQUEST['cari']);
                         echo '
-                        <div class="col m12" style="margin-top: -18px;">
+                        <div class="col s12" style="margin-top: -18px;">
                             <div class="card blue lighten-5">
                                 <div class="card-content">
                                 <p class="description">Hasil pencarian untuk kata kunci <strong>"'.stripslashes($cari).'"</strong><span class="right"><a href="?page=tsm"><i class="material-icons md-36" style="color: #333;">clear</i></a></span></p>
@@ -213,12 +213,12 @@
                                                     echo '
                                                     <div class="row">
                                                         <form method="post" action="">
-                                                            <div class="input-field col m12">
+                                                            <div class="input-field col s12">
                                                                 <input type="hidden" value="'.$id_sett.'" name="id_sett">
-                                                                <div class="input-field col m1" style="float: left;">
+                                                                <div class="input-field col s1" style="float: left;">
                                                                     <i class="material-icons prefix md-prefix">looks_one</i>
                                                                 </div>
-                                                                <div class="input-field col m11 right" style="margin: -5px 0 20px;">
+                                                                <div class="input-field col s11 right" style="margin: -5px 0 20px;">
                                                                     <select class="browser-default validate" name="surat_masuk" required>
                                                                         <option value="'.$surat_masuk.'">'.$surat_masuk.'</option>
                                                                         <option value="5">5</option>

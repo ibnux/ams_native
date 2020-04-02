@@ -4,7 +4,7 @@
         $query = mysqli_query($config, "SELECT * FROM tbl_instansi");
         while($data = mysqli_fetch_array($query)){
             echo '
-                <div class="col m12" id="header-instansi">
+                <div class="col s12" id="header-instansi">
                     <div class="card blue-grey white-text">
                         <div class="card-content">';
                             if(!empty($data['logo'])){

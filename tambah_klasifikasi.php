@@ -69,7 +69,7 @@
                 <!-- Row Start -->
                 <div class="row">
                     <!-- Secondary Nav START -->
-                    <div class="col m12">
+                    <div class="col s12">
                         <nav class="secondary-nav">
                             <div class="nav-wrapper blue-grey darken-1">
                                 <ul class="left">
@@ -115,11 +115,11 @@
                 <div class="row jarak-form">
 
                     <!-- Form START -->
-                    <form class="col m12" method="post" action="?page=ref&act=add">
+                    <form class="col s12" method="post" action="?page=ref&act=add">
 
                         <!-- Row in form START -->
                         <div class="row">
-                            <div class="input-field col m3">
+                            <div class="input-field col s3">
                                 <i class="material-icons prefix md-prefix">font_download</i>
                                 <input id="kd" type="text" class="validate" maxlength="30" name="kode" required>
                                     <?php
@@ -136,7 +136,7 @@
                                     ?>
                                 <label for="kd">Kode</label>
                             </div>
-                            <div class="input-field col m9">
+                            <div class="input-field col s9">
                                 <i class="material-icons prefix md-prefix">text_fields</i>
                                 <input id="nama" type="text" class="validate" name="nama" required>
                                     <?php
@@ -148,7 +148,7 @@
                                     ?>
                                 <label for="nama">Nama</label>
                             </div>
-                            <div class="input-field col m12">
+                            <div class="input-field col s12">
                                 <i class="material-icons prefix md-prefix">subject</i>
                                 <textarea id="uraian" class="materialize-textarea" name="uraian" required></textarea>
                                     <?php

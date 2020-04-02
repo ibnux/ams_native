@@ -178,8 +178,8 @@ Website     : https://masrud.com
         <!-- Row START -->
         <div class="row">
 
-            <!-- col mTART -->
-            <div class="col m12 m6 offset-m3 offset-m3">
+            <!-- Col START -->
+            <div class="col s12 m6 offset-m3 offset-m3">
 
                 <!-- Box START -->
                 <div class="card-panel z-depth-2" id="login">
@@ -192,7 +192,7 @@ Website     : https://masrud.com
                         while($data = mysqli_fetch_array($query)){
                     ?>
                     <!-- Logo and title START -->
-                    <div class="col m12">
+                    <div class="col s12">
                         <div class="card-content">
                             <h5 class="center" id="title">Aplikasi Manajemen Surat</h5>
                             <?php echo '<img id="logo" src="upload/'.$data['logo'].'">';?>
@@ -213,7 +213,7 @@ Website     : https://masrud.com
                             //validasi form kosong
                             if($_REQUEST['username'] == "" || $_REQUEST['password'] == ""){
                                 echo '<div class="upss red-text"><i class="material-icons">error_outline</i> <strong>ERROR!</strong> Username dan Password wajib diisi.
-                                <a class="btn-large waves-effect waves-light blue-grey col m11" href="" style="margin: 20px 0 0 5px;"><i class="material-icons md-24">arrow_back</i> Kembali ke login form</a></div>';
+                                <a class="btn-large waves-effect waves-light blue-grey col s11" href="" style="margin: 20px 0 0 5px;"><i class="material-icons md-24">arrow_back</i> Kembali ke login form</a></div>';
                             } else {
 
                                 $username = trim(htmlspecialchars(mysqli_real_escape_string($config, $_REQUEST['username'])));
@@ -245,7 +245,7 @@ Website     : https://masrud.com
                     ?>
 
                     <!-- Form START -->
-                    <form class="col m12 m12 offset-4 offset-4" method="POST" action="" >
+                    <form class="col s12 m12 offset-4 offset-4" method="POST" action="" >
                         <div class="row">
                             <?php
                                 if(isset($_SESSION['errLog'])){
@@ -262,18 +262,18 @@ Website     : https://masrud.com
                                 }
                             ?>
                         </div>
-                        <div class="input-field col m12">
+                        <div class="input-field col s12">
                             <i class="material-icons prefix md-prefix">account_circle</i>
                             <input id="username" type="text" class="validate" name="username" required>
                             <label for="username">Username</label>
                         </div>
-                        <div class="input-field col m12">
+                        <div class="input-field col s12">
                             <i class="material-icons prefix md-prefix">lock</i>
                             <input id="password" type="password" class="validate" name="password" required">
                             <label for="password">Password</label>
                         </div>
-                        <div class="input-field col m12">
-                            <button type="submit" class="btn-large waves-effect waves-light blue-grey col m12" name="submit">LOGIN</button>
+                        <div class="input-field col s12">
+                            <button type="submit" class="btn-large waves-effect waves-light blue-grey col s12" name="submit">LOGIN</button>
                         </div>
                     </form>
                     <!-- Form END -->

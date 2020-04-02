@@ -88,7 +88,7 @@
                 <!-- Row Start -->
                 <div class="row">
                     <!-- Secondary Nav START -->
-                    <div class="col m12">
+                    <div class="col s12">
                         <nav class="secondary-nav">
                             <div class="nav-wrapper blue-grey darken-1">
                                 <ul class="left">
@@ -134,7 +134,7 @@
                 <div class="row jarak-form">
 
                     <!-- Form START -->
-                    <form class="col m12" method="post" action="?page=pro&sub=pass">
+                    <form class="col s12" method="post" action="?page=pro&sub=pass">
 
                         <!-- Row in form START -->
                         <div class="row">
@@ -225,7 +225,7 @@
             <!-- Row Start -->
             <div class="row">
                 <!-- Secondary Nav START -->
-                <div class="col m12">
+                <div class="col s12">
                     <nav class="secondary-nav">
                         <div class="nav-wrapper blue-grey darken-1">
                             <ul class="left">
@@ -242,7 +242,7 @@
             <div class="row jarak-form">
 
                 <!-- Form START -->
-                <form class="col m12" method="post" action="save.php">
+                <form class="col s12" method="post" action="save.php">
 
                     <!-- Row in form START -->
                     <div class="row">

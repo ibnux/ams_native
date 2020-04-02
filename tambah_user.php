@@ -82,7 +82,7 @@
             <!-- Row Start -->
             <div class="row">
                 <!-- Secondary Nav START -->
-                <div class="col m12">
+                <div class="col s12">
                     <nav class="secondary-nav">
                         <div class="nav-wrapper blue-grey darken-1">
                             <ul class="left">
@@ -128,7 +128,7 @@
             <div class="row jarak-form">
 
                 <!-- Form START -->
-                <form class="col m12" method="post" action="?page=sett&sub=usr&act=add">
+                <form class="col s12" method="post" action="?page=sett&sub=usr&act=add">
 
                     <!-- Row in form START -->
                     <div class="row">
@@ -192,7 +192,7 @@
                         </div>
                         <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">supervisor_account</i><label>Pilih Tipe User</label><br/>
-                            <div class="input-field col m11 right">
+                            <div class="input-field col s11 right">
                                 <select class="browser-default validate" name="admin" id="admin" required>
                                     <option value="3">User Biasa</option>
                                     <option value="2">Administrator</option>
