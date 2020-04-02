@@ -92,7 +92,7 @@ Website     : https://masrud.com
             <!-- Include Header Instansi END -->
 
             <!-- Welcome Message START -->
-            <div class="col s12">
+            <div class="col m12">
                 <div class="card">
                     <div class="card-content">
                         <h4>Selamat Datang <?php echo $_SESSION['nama']; ?></h4>
@@ -129,7 +129,7 @@ Website     : https://masrud.com
 
             <!-- Info Statistic START -->
             <a href="?page=tsm">
-                <div class="col s12 m4">
+                <div class="col m12 m4">
                     <div class="card cyan">
                         <div class="card-content">
                             <span class="card-title white-text"><i class="material-icons md-36">mail</i> Jumlah Surat Masuk</span>
@@ -140,7 +140,7 @@ Website     : https://masrud.com
             </a>
 
             <a href="?page=tsk">
-                <div class="col s12 m4">
+                <div class="col m12 m4">
                     <div class="card lime darken-1">
                         <div class="card-content">
                             <span class="card-title white-text"><i class="material-icons md-36">drafts</i> Jumlah Surat Keluar</span>
@@ -150,7 +150,7 @@ Website     : https://masrud.com
                 </div>
             </a>
 
-            <div class="col s12 m4">
+            <div class="col m12 m4">
                 <div class="card yellow darken-3">
                     <div class="card-content">
                         <span class="card-title white-text"><i class="material-icons md-36">description</i> Jumlah Disposisi</span>
@@ -160,7 +160,7 @@ Website     : https://masrud.com
             </div>
 
             <a href="?page=ref">
-                <div class="col s12 m4">
+                <div class="col m12 m4">
                     <div class="card deep-orange">
                         <div class="card-content">
                             <span class="card-title white-text"><i class="material-icons md-36">class</i> Jumlah Klasifikasi Surat</span>
@@ -173,7 +173,7 @@ Website     : https://masrud.com
         <?php
             if($_SESSION['id_user'] == 1 || $_SESSION['admin'] == 2){?>
                 <a href="?page=sett&sub=usr">
-                    <div class="col s12 m4">
+                    <div class="col m12 m4">
                         <div class="card blue accent-2">
                             <div class="card-content">
                                 <span class="card-title white-text"><i class="material-icons md-36">people</i> Jumlah Pengguna</span>

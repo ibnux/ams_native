@@ -82,7 +82,7 @@
                     <!-- Row Start -->
                     <div class="row">
                         <!-- Secondary Nav START -->
-                        <div class="col s12">
+                        <div class="col m12">
                             <div class="z-depth-1">
                                 <nav class="secondary-nav">
                                     <div class="nav-wrapper blue-grey darken-1">
@@ -101,13 +101,13 @@
 
                     <!-- Row form Start -->
                     <div class="row jarak-form black-text">
-                        <form class="col s12" method="post" action="">
-                            <div class="input-field col s3">
+                        <form class="col m12" method="post" action="">
+                            <div class="input-field col m3">
                                 <i class="material-icons prefix md-prefix">date_range</i>
                                 <input id="dari_tanggal" type="text" name="dari_tanggal" id="dari_tanggal" required>
                                 <label for="dari_tanggal">Dari Tanggal</label>
                             </div>
-                            <div class="input-field col s3">
+                            <div class="input-field col m3">
                                 <i class="material-icons prefix md-prefix">date_range</i>
                                 <input id="sampai_tanggal" type="text" name="sampai_tanggal" id="sampai_tanggal" required>
                                 <label for="sampai_tanggal">Sampai Tanggal</label>
@@ -136,10 +136,10 @@
                     </div>
                     <div class="separator"></div>
                     <h5 class="hid">AGENDA SURAT MASUK</h5>
-                        <div class="col s10">
+                        <div class="col m10">
                             <p class="warna agenda">Agenda Surat Masuk dari tanggal <strong>'.indoDate($dari_tanggal).'</strong> sampai dengan tanggal <strong>'.indoDate($sampai_tanggal).'</strong></p>
                         </div>
-                        <div class="col s2">
+                        <div class="col m2">
                             <button type="submit" onClick="window.print()" class="btn-large deep-orange waves-effect waves-light right">CETAK <i class="material-icons">print</i></button>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
                 <!-- Row Start -->
                 <div class="row">
                     <!-- Secondary Nav START -->
-                    <div class="col s12">
+                    <div class="col m12">
                         <div class="z-depth-1">
                             <nav class="secondary-nav">
                                 <div class="nav-wrapper blue-grey darken-1">
@@ -219,13 +219,13 @@
 
                 <!-- Row form Start -->
                 <div class="row jarak-form black-text">
-                    <form class="col s12" method="post" action="">
-                        <div class="input-field col s3">
+                    <form class="col m12" method="post" action="">
+                        <div class="input-field col m3">
                             <i class="material-icons prefix md-prefix">date_range</i>
                             <input id="dari_tanggal" type="text" name="dari_tanggal" id="dari_tanggal" required>
                             <label for="dari_tanggal">Dari Tanggal</label>
                         </div>
-                        <div class="input-field col s3">
+                        <div class="input-field col m3">
                             <i class="material-icons prefix md-prefix">date_range</i>
                             <input id="sampai_tanggal" type="text" name="sampai_tanggal" id="sampai_tanggal" required>
                             <label for="sampai_tanggal">Sampai Tanggal</label>

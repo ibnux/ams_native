@@ -49,7 +49,7 @@
                       echo '<!-- Row Start -->
                             <div class="row">
                                 <!-- Secondary Nav START -->
-                                <div class="col s12">
+                                <div class="col m12">
                                     <div class="z-depth-1">
                                         <nav class="secondary-nav">
                                             <div class="nav-wrapper blue-grey darken-1">
@@ -71,7 +71,7 @@
                             <!-- Row END -->
 
                             <!-- Perihal START -->
-                            <div class="col s12">
+                            <div class="col m12">
                                 <div class="card blue lighten-5">
                                     <div class="card-content">
                                         <p><p class="description">Perihal Surat:</p>'.$row['isi'].'</p>

@@ -17,7 +17,7 @@
           echo '<!-- Row Start -->
                 <div class="row">
                     <!-- Secondary Nav START -->
-                    <div class="col s12">
+                    <div class="col m12">
                         <div class="z-depth-1">
                             <nav class="secondary-nav">
                                 <div class="nav-wrapper blue-grey darken-1">
@@ -114,7 +114,7 @@
                                                 <input class="file-path validate" placeholder="Upload file backup database sql" type="text">
                                              </div>
                                         </div>
-                                        <div class="input-field col s4">
+                                        <div class="input-field col m4">
                                             <i class="material-icons prefix md-prefix">lock</i>
                                             <input id="password_lama" type="password" class="validate" name="password" required>
                                             <label for="password_lama">Masukkan password Anda</label>

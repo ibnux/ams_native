@@ -82,8 +82,8 @@
                                     echo '
                                     <div class="gbr">
                                         <div class="row">
-                                            <div class="col s12">
-                                                <div class="col s9 left">
+                                            <div class="col m12">
+                                                <div class="col m9 left">
                                                     <div class="card">
                                                         <div class="card-content">
                                                             <p>File lampiran surat keluar ini bertipe <strong>document</strong>, silakan klik link dibawah ini untuk melihat file lampiran tersebut.</p>
@@ -94,7 +94,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col s3 right">
+                                                <div class="col m3 right">
                                                     <img class="file" src="./asset/img/word.png">
                                                 </div>
                                             </div>
@@ -104,8 +104,8 @@
                                     echo '
                                     <div class="gbr">
                                         <div class="row">
-                                            <div class="col s12">
-                                                <div class="col s9 left">
+                                            <div class="col m12">
+                                                <div class="col m9 left">
                                                     <div class="card">
                                                         <div class="card-content">
                                                             <p>File lampiran surat keluar ini bertipe <strong>PDF</strong>, silakan klik link dibawah ini untuk melihat file lampiran tersebut.</p>
@@ -116,7 +116,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col s3 right">
+                                                <div class="col m3 right">
                                                     <img class="file" src="./asset/img/pdf.png">
                                                 </div>
                                             </div>
