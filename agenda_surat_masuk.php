@@ -112,7 +112,7 @@
                                 <input id="sampai_tanggal" type="text" name="sampai_tanggal" id="sampai_tanggal" required>
                                 <label for="sampai_tanggal">Sampai Tanggal</label>
                             </div>
-                            <div class="col s6">
+                            <div class="col m6">
                                 <button type="submit" name="submit" class="btn-large blue waves-effect waves-light"> TAMPILKAN <i class="material-icons">visibility</i></button>
                             </div>
                         </form>
@@ -230,7 +230,7 @@
                             <input id="sampai_tanggal" type="text" name="sampai_tanggal" id="sampai_tanggal" required>
                             <label for="sampai_tanggal">Sampai Tanggal</label>
                         </div>
-                        <div class="col s6">
+                        <div class="col m6">
                             <button type="submit" name="submit" class="btn-large blue waves-effect waves-light"> TAMPILKAN <i class="material-icons">visibility</i></button>
                         </div>
                     </form>

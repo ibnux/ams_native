@@ -223,7 +223,7 @@
 
                     <!-- Row in form START -->
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <input type="hidden" name="id_surat" value="<?php echo $id_surat ;?>">
                             <i class="material-icons prefix md-prefix">looks_one</i>
                             <input id="no_agenda" type="number" class="validate" value="<?php echo $no_agenda ;?>" name="no_agenda" required>
@@ -236,7 +236,7 @@
                                 ?>
                             <label for="no_agenda">Nomor Agenda</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">bookmark</i>
                             <input id="kode" type="text" class="validate" name="kode" value="<?php echo $kode ;?>" required>
                                 <?php
@@ -248,7 +248,7 @@
                                 ?>
                             <label for="kode">Kode Klasifikasi</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">place</i>
                             <input id="asal_surat" type="text" class="validate" name="asal_surat" value="<?php echo $asal_surat ;?>" required>
                                 <?php
@@ -260,7 +260,7 @@
                                 ?>
                             <label for="asal_surat">Asal Surat</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">storage</i>
                             <input id="indeks" type="text" class="validate" name="indeks" value="<?php echo $indeks ;?>" required>
                                 <?php
@@ -272,7 +272,7 @@
                                 ?>
                             <label for="indeks">Indeks Berkas</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">looks_two</i>
                             <input id="no_surat" type="text" class="validate" name="no_surat" value="<?php echo $no_surat ;?>" required>
                                 <?php
@@ -284,7 +284,7 @@
                                 ?>
                             <label for="no_surat">Nomor Surat</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">date_range</i>
                             <input id="tgl_surat" type="text" name="tgl_surat" class="datepicker" value="<?php echo $tgl_surat ;?>" required>
                                 <?php
@@ -296,7 +296,7 @@
                                 ?>
                             <label for="tgl_surat">Tanggal Surat</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">description</i>
                             <textarea id="isi" class="materialize-textarea validate" name="isi" required><?php echo $isi ;?></textarea>
                                 <?php
@@ -308,7 +308,7 @@
                                 ?>
                             <label for="isi">Isi Ringkas</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">featured_play_list</i>
                             <input id="keterangan" type="text" class="validate" name="keterangan" value="<?php echo $keterangan ;?>" required>
                                 <?php
@@ -320,7 +320,7 @@
                                 ?>
                             <label for="keterangan">Keterangan</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <div class="file-field input-field">
                                 <div class="btn light-green darken-1">
                                     <span>File</span>

@@ -234,7 +234,7 @@
 
                                 <!-- Row in form START -->
                                 <div class="row">
-                                    <div class="input-field col s6">
+                                    <div class="input-field col m6">
                                         <input type="hidden" value="<?php echo $id_instansi; ?>" name="id_instansi">
                                         <i class="material-icons prefix md-prefix">school</i>
                                         <input id="nama" type="text" class="validate" name="nama" value="<?php echo $row['nama']; ?>" required>
@@ -247,7 +247,7 @@
                                             ?>
                                         <label for="nama">Nama Instansi</label>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col m6">
                                         <i class="material-icons prefix md-prefix">work</i>
                                         <input id="institusi" type="text" class="validate" name="institusi" value="<?php echo $row['institusi']; ?>" required>
                                             <?php
@@ -259,7 +259,7 @@
                                             ?>
                                         <label for="institusi">Nama Yayasan</label>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col m6">
                                         <i class="material-icons prefix md-prefix">assistant_photo</i>
                                         <input id="status" type="text" class="validate" name="status" value='<?php echo $row['status']; ?>' required>
                                             <?php
@@ -271,7 +271,7 @@
                                             ?>
                                         <label for="status">Status</label>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col m6">
                                         <i class="material-icons prefix md-prefix">account_box</i>
                                         <input id="kepsek" type="text" class="validate" name="kepsek" value="<?php echo $row['kepsek']; ?>" required>
                                             <?php
@@ -283,7 +283,7 @@
                                             ?>
                                         <label for="kepsek">Nama Kepala Sekolah</label>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col m6">
                                         <i class="material-icons prefix md-prefix">place</i>
                                         <input id="alamat" type="text" class="validate" name="alamat" value="<?php echo $row['alamat']; ?>" required>
                                             <?php
@@ -295,7 +295,7 @@
                                             ?>
                                         <label for="alamat">Alamat</label>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col m6">
                                         <i class="material-icons prefix md-prefix">looks_one</i>
                                         <input id="nip" type="text" class="validate" name="nip" value="<?php echo $row['nip']; ?>" required>
                                             <?php
@@ -307,7 +307,7 @@
                                             ?>
                                         <label for="nip">NIP Kepala Sekolah</label>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col m6">
                                         <i class="material-icons prefix md-prefix">language</i>
                                         <input id="website" type="url" class="validate" name="website" value="<?php echo $row['website']; ?>" required>
                                             <?php
@@ -319,7 +319,7 @@
                                             ?>
                                         <label for="website">Website</label>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col m6">
                                         <i class="material-icons prefix md-prefix">mail</i>
                                         <input id="email" type="email" class="validate" name="email" value="<?php echo $row['email']; ?>" required>
                                             <?php
@@ -331,7 +331,7 @@
                                             ?>
                                         <label for="email">Email Instansi</label>
                                     </div>
-                                    <div class="input-field col s6 tooltipped" data-position="top" data-tooltip="Jika tidak ada logo, biarkan kosong">
+                                    <div class="input-field col m6 tooltipped" data-position="top" data-tooltip="Jika tidak ada logo, biarkan kosong">
                                         <div class="file-field input-field">
                                             <div class="btn light-green darken-1">
                                                 <span>File</span>
@@ -355,7 +355,7 @@
                                             <small class="red-text">*Format file yang diperbolehkan hanya *.JPG, *.PNG dan ukuran maksimal file <?=getMaximumFileUploadSize()?>. Disarankan gambar berbentuk kotak atau lingkaran!</small>
                                         </div>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col m6">
                                         <img class="logo" src="upload/<?php echo $row['logo']; ?>"/>
                                     </div>
                                 </div>

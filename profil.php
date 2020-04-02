@@ -138,7 +138,7 @@
 
                         <!-- Row in form START -->
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col m6">
                                 <i class="material-icons prefix md-prefix">account_circle</i>
                                 <input id="username" type="text" class="validate" name="username" value="<?php echo $_SESSION['username']; ?>" required>
                                     <?php
@@ -155,7 +155,7 @@
                                     ?>
                                 <label for="username">Username</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col m6">
                                 <i class="material-icons prefix md-prefix">text_fields</i>
                                 <input id="nama" type="text" class="validate" name="nama" value="<?php echo $_SESSION['nama']; ?>" required>
                                     <?php
@@ -167,12 +167,12 @@
                                     ?>
                                 <label for="nama">Nama</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col m6">
                                 <i class="material-icons prefix md-prefix">lock_outline</i>
                                 <input id="password_lama" type="password" class="validate" name="password_lama" required>
                                 <label for="password_lama">Password Lama</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col m6">
                                 <i class="material-icons prefix md-prefix">looks_one</i>
                                 <input id="nip" type="text" class="validate" name="nip" value="<?php echo $_SESSION['nip']; ?>" required autocomplete="off">
                                     <?php
@@ -184,7 +184,7 @@
                                     ?>
                                 <label for="nip">NIP</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col m6">
                                 <i class="material-icons prefix md-prefix">lock</i>
                                 <input id="password" type="password" class="validate" name="password" required>
                                     <?php
@@ -246,22 +246,22 @@
 
                     <!-- Row in form START -->
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">account_circle</i>
                             <input id="username" type="text" value="<?php echo $_SESSION['username']; ?>" readonly disable>
                             <label for="username">Username</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">text_fields</i>
                             <input id="nama" type="text" value="<?php echo $_SESSION['nama']; ?>" readonly disable>
                             <label for="nama">Nama</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">lock</i>
                             <input id="password" type="text" value="*" readonly disable>
                             <label for="password">Password</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">looks_one</i>
                             <input id="nip" type="text" value="<?php echo $_SESSION['nip']; ?>" readonly disable>
                             <label for="nip">NIP</label>

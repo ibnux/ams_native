@@ -126,7 +126,7 @@
 
                     <!-- Row in form START -->
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">place</i>
                             <input id="tujuan" type="text" class="validate" name="tujuan" required>
                                 <?php
@@ -138,7 +138,7 @@
                                 ?>
                             <label for="tujuan">Tujuan Disposisi</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">alarm</i>
                             <input id="batas_waktu" type="text" name="batas_waktu" class="datepicker" required>
                                 <?php
@@ -150,7 +150,7 @@
                                 ?>
                             <label for="batas_waktu">Batas Waktu</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">description</i>
                             <textarea id="isi_disposisi" class="materialize-textarea validate" name="isi_disposisi" required></textarea>
                                 <?php
@@ -162,7 +162,7 @@
                                 ?>
                             <label for="isi_disposisi">Isi Disposisi</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">featured_play_list   </i>
                             <input id="catatan" type="text" class="validate" name="catatan" required>
                                 <?php
@@ -174,7 +174,7 @@
                                 ?>
                             <label for="catatan">Catatan</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6">
                             <i class="material-icons prefix md-prefix">low_priority</i><label>Pilih Sifat Disposisi</label><br/>
                             <div class="input-field col s11 right">
                                 <select class="browser-default validate" name="sifat" id="sifat" required>
