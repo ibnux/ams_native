@@ -3,17 +3,6 @@ date_default_timezone_set("Asia/Jakarta");
 use Medoo\Medoo;
 
 /**
- * FUngsi koneksi database.
- */
-function conn($host, $username, $password, $database)
-{
-    $conn = mysqli_connect($host, $username, $password, $database);
-
-    // Menampilkan pesan error jika database tidak terhubung
-    return ($conn) ? $conn : "Koneksi database gagal: " . mysqli_connect_error();
-}
-
-/**
  * Fungsi untuk mengkonversi format tanggal menjadi format Indonesia.
  */
 function indoDate($date)

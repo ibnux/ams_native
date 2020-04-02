@@ -12,18 +12,7 @@
     require_once 'include/config.php';
     require_once 'include/functions.php';
 ?>
-<!--
 
-Name        : Aplikasi Sederhana Manajemen Surat Menyurat
-Version     : v1.0.1
-Description : Aplikasi untuk mencatat data surat masuk dan keluar secara digital.
-Date        : 2016
-Developer   : M. Rudianto
-Phone/WA    : 0852-3290-4156
-Email       : rudi@masrud.com
-Website     : https://masrud.com
-
--->
 <!doctype html>
 <html lang="en">
 
@@ -207,13 +196,12 @@ Website     : https://masrud.com
                                 <a class="btn-large waves-effect waves-light blue-grey col s11" href="" style="margin: 20px 0 0 5px;"><i class="material-icons md-24">arrow_back</i> Kembali ke login form</a></div>';
                             } else {
 
-                                $username = trim(htmlspecialchars(mysqli_real_escape_string($config, $_REQUEST['username'])));
-                                $password = trim(htmlspecialchars(mysqli_real_escape_string($config, $_REQUEST['password'])));
+                                $username = trim(htmlspecialchars($_REQUEST['username']));
+                                $password = $_REQUEST['password'];
 
                                 $data = $db->get('tbl_user', ['id_user','id_instansi', 'username', 'nama', 'nip', 'admin','password'],['username'=>$username]);
 
                                 if(md5($password) == $data['password']){
-                                    list($id_user, $username, $nama, $nip, $admin) = mysqli_fetch_array($query);
                                     //buat session
                                     $_SESSION['id_user'] = $data['id_user'];
                                     $_SESSION['username'] = $data['username'];
