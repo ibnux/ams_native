@@ -207,7 +207,16 @@ function restore($host, $user, $pass, $dbname, $file){
             echo '<script language="javascript">
                     window.alert("ERROR! Password salah. Anda mungkin tidak memiliki akses ke halaman ini");
                     window.location.href="index.php";
-                  </script>';
+                </script>';
         }
     }
+}
+
+/**
+* Cek maximal file upload
+**/
+function getMaximumFileUploadSize()
+{
+    $bytes = ini_get('post_max_size');
+    return $bytes."B";
 }
